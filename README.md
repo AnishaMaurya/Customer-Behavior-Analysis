@@ -1,190 +1,158 @@
-# 🛒 ShopNest E-Commerce Analytics: Revenue & Delivery Performance Dashboard
+# 🛍️ Customer Behavior Analysis: Segmentation & Spending Insights
 
+## 🎥 Dashboard Preview
+
+<!-- ADD DASHBOARD GIF HERE -->
 
 <p align="center">
-  <img src="./assets/dashboard_demo.gif" width="900"/>
+  <img src="./assets/customer_dashboard.gif" width="900"/>
 </p>
+
+👉 Interactive preview showing filters, segmentation, and insights
 
 ---
 
 ## 📖 The Story
 
-ShopNest is a growing e-commerce company showing strong revenue growth. At first glance, everything seems to be working well — orders are increasing, and revenue is steadily rising.
+Understanding customers is at the heart of every successful business. While transactions provide raw data, they don’t directly reveal **who the customers are, how they behave, and what drives their spending**.
 
-But growth alone doesn’t tell the full story.
-
-Behind the numbers, there are hidden operational challenges:
-
-* Are deliveries happening on time?
-* Which products are causing delays?
-* Are customers actually satisfied?
-
-This project was built to answer those questions and uncover the **real story behind the data**.
+In this project, I analyze customer transactions to uncover patterns in purchasing behavior, segment customers, and identify opportunities for targeted strategies.
 
 ---
 
-## 🔍 The Problem
+## 🎯 Business Problem
 
-While revenue is increasing, ShopNest lacks visibility into:
+The business lacks clarity on:
 
-* Delivery delays and operational inefficiencies
-* Category-level performance
-* Customer experience and satisfaction
+* Who are the most valuable customers?
+* How do different customer groups behave?
+* What factors influence spending patterns?
 
-👉 Without this visibility, growth could lead to **customer dissatisfaction and operational strain**.
-
----
-
-## 💡 The Approach
-
-To solve this, I built an interactive Power BI dashboard that allows stakeholders to move from **high-level KPIs → detailed operational insights**.
-
-The dashboard answers:
-
-* What is driving revenue?
-* Where are delays happening?
-* Which regions and products need attention?
+👉 Without segmentation, marketing and pricing strategies remain inefficient.
 
 ---
 
-## 📊 The Big Picture
+## 💡 Solution Approach
+
+To address this, I performed a complete data analysis workflow:
+
+* 🧹 Data cleaning and preprocessing
+* 🗂 SQL-based data extraction and aggregation
+* 📊 Customer segmentation (Loyal, Returning, New)
+* 📈 Visualization of spending patterns using Power BI
+
+The result is a dashboard that enables **data-driven customer insights and decision-making**.
+
+---
+
+## 📊 Dataset Overview
+
+* Total Transactions: **3,900+**
+* Data Sources: SQL + Python + Power BI
+* Key Features:
+
+  * Customer ID
+  * Purchase Amount
+  * Gender
+  * Order Type
+  * Shipping Method
+
+---
+
+## 👥 Customer Segmentation
+
+<!-- ADD SEGMENTATION IMAGE HERE -->
 
 <p align="center">
-  <img src="./assets/shopnest_overview.png" width="900"/>
+  <img src="./assets/customer_segmentation.png" width="700"/>
 </p>
 
-At a glance, the business looks strong:
+Customers were segmented into:
 
-* 💰 Revenue: **15.84M**
-* 📈 Growth: **17.1% YoY**
-* 📦 Orders: **99K**
+* 🟢 Loyal Customers
+* 🟡 Returning Customers
+* 🔵 New Customers
 
-But one metric stands out:
-
-* ⏱ Average delivery time: **12.5 days**
-
-👉 This hints at a deeper operational issue.
+👉 Majority of customers fall under the **loyal segment (~3000+)**
 
 ---
 
-## 📦 What’s Driving Revenue?
+## 💰 Spending Behavior Analysis
+
+<!-- ADD SPENDING PATTERN IMAGE HERE -->
 
 <p align="center">
-  <img src="./assets/revenue_categories.png" width="700"/>
+  <img src="./assets/spending_analysis.png" width="700"/>
 </p>
 
-Revenue is dominated by:
+* Higher spending observed among **male customers**
+* Express shipping users tend to spend more
 
-* Health & Beauty
-* Watches & Gifts
-* Bed & Bath
-
-👉 The business relies heavily on lifestyle products — a key area to protect and optimize.
+👉 Indicates strong correlation between **shipping preference and purchase value**
 
 ---
 
-## 🚚 What’s Happening with Deliveries?
+## 📦 Order & Shipping Insights
+
+<!-- ADD SHIPPING IMAGE HERE -->
 
 <p align="center">
-  <img src="./assets/delivery_trend.png" width="700"/>
+  <img src="./assets/shipping_analysis.png" width="700"/>
 </p>
 
-* Most deliveries are on time
-* But delays increase during peak periods
-
-👉 Growth is putting pressure on operations.
+* Express delivery linked with higher-value purchases
+* Standard delivery dominates volume but lower value
 
 ---
 
-## 🐢 The Real Bottleneck
+## 📍 Customer Distribution
+
+<!-- ADD CUSTOMER DISTRIBUTION IMAGE HERE -->
 
 <p align="center">
-  <img src="./assets/slow_categories.png" width="700"/>
+  <img src="./assets/customer_distribution.png" width="700"/>
 </p>
 
-Certain categories stand out:
-
-* Furniture
-* Bulky products
-
-👉 These take significantly longer to deliver.
-
-This reveals a key insight:
-
-> Not all products behave the same — logistics complexity matters.
+* Loyal customers dominate overall transaction volume
+* New customers represent growth opportunity
 
 ---
 
-## 🌍 Where Is the Pressure Coming From?
+## 🧠 Key Insights
 
-<p align="center">
-  <img src="./assets/geo_revenue.png" width="700"/>
-</p>
-
-São Paulo (SP):
-
-* Highest revenue
-* Highest delays
-
-👉 High demand regions are creating **operational bottlenecks**
+* Majority customers are **loyal**, indicating strong retention
+* Spending is higher among **specific segments (male, express users)**
+* Customer segmentation enables **targeted marketing strategies**
+* Shipping preferences influence **purchase behavior**
 
 ---
 
-## 🔍 Digging Deeper
+## 📈 Business Impact
 
-<p align="center">
-  <img src="./assets/delivery_analysis.png" width="900"/>
-</p>
+This analysis helps businesses:
 
-When drilling into delays:
-
-* Some deliveries take **50+ days**
-* Delays cluster around specific categories and regions
-
-👉 This confirms the issue is **systematic, not random**
-
----
-
-## 🧠 What Did We Learn?
-
-* Growth is strong, but operations are under pressure
-* Delivery delays are concentrated in:
-
-  * Bulky product categories
-  * High-demand regions
-* Customer satisfaction is closely tied to delivery performance
-
----
-
-## 📈 The Impact
-
-This analysis helps the business:
-
-* Identify operational bottlenecks
-* Improve delivery efficiency
-* Enhance customer experience
-* Support data-driven decision making
+* 🎯 Target high-value customer segments
+* 📦 Optimize shipping strategies
+* 📊 Improve customer retention
+* 💰 Increase revenue through personalized offers
 
 ---
 
 ## 🚀 Recommendations
 
-Based on the insights:
-
-* Optimize logistics for bulky products
-* Introduce regional warehouses (especially in SP)
-* Improve last-mile delivery tracking
-* Implement predictive delay monitoring
+* Focus marketing on **high-spending customer segments**
+* Offer incentives for **express delivery adoption**
+* Build loyalty programs for **repeat customers**
+* Target new customers with onboarding offers
 
 ---
 
 ## ⚙️ Tools Used
 
+* SQL
+* Python (Pandas)
 * Power BI
-* DAX
-* Data Modeling
-* Time Intelligence
-* Drillthrough Analysis
+* Data Cleaning & Visualization
 
 ---
 
@@ -194,6 +162,3 @@ Based on the insights:
 Aspiring Data Analyst 🚀
 
 ---
-
-
-
