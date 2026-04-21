@@ -1,67 +1,199 @@
-# Customer Behavior Analysis
+# 🛒 ShopNest E-Commerce Analytics: Revenue & Delivery Performance Dashboard
 
-Project analyzing customer shopping behavior using exploratory data analysis and basic modeling.
 
-Overview
---------
-This repository contains an exploratory analysis of customer shopping behavior based on transactional and demographic data. The goal is to understand patterns, visualize trends, and derive actionable insights for marketing and product teams.
+<p align="center">
+  <img src="./assets/dashboard_demo.gif" width="900"/>
+</p>
 
-Dataset
--------
-The dataset used is `customer_shopping_behavior.csv`. It includes features such as customer demographics, transaction amounts, product categories, and timestamps. See the notebook for details on columns and preprocessing steps.
+---
 
-Files
------
-- `customer_shopping_behavior.csv` — raw data (CSV).
-- `Exploratory_Data_Analysis.ipynb` — Jupyter notebook with data cleaning, analysis, visualizations, and initial modeling.
+## 📖 The Story
 
-Getting started
----------------
-Recommended Python environment and dependencies (common packages used in the notebook):
+ShopNest is a growing e-commerce company showing strong revenue growth. At first glance, everything seems to be working well — orders are increasing, and revenue is steadily rising.
 
-```bash
-python -m venv .venv
-# Windows PowerShell
-.\.venv\Scripts\Activate.ps1
-pip install --upgrade pip
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-```
+But growth alone doesn’t tell the full story.
 
-If you prefer `conda`:
+Behind the numbers, there are hidden operational challenges:
 
-```bash
-conda create -n customer-behavior python=3.10 -y
-conda activate customer-behavior
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-```
+* Are deliveries happening on time?
+* Which products are causing delays?
+* Are customers actually satisfied?
 
-Usage
------
-Open and run the notebook to reproduce the analysis and plots:
+This project was built to answer those questions and uncover the **real story behind the data**.
 
-```bash
-jupyter notebook Exploratory_Data_Analysis.ipynb
-```
+---
 
-Key steps in the notebook
-------------------------
-- Data loading and initial inspection
-- Data cleaning and feature engineering
-- Exploratory visualizations (distributions, correlations, time-based trends)
-- Simple predictive modeling (baseline classifiers/regressors) and evaluation
+## 🔍 The Problem
 
-Results
--------
-See the notebook for visualizations and a short summary of findings. Typical outcomes include customer segments, high-value product categories, and suggested next steps for targeted marketing.
+While revenue is increasing, ShopNest lacks visibility into:
 
-Contributing
-------------
-If you'd like to contribute, please open an issue or submit a pull request with a clear description of proposed changes.
+* Delivery delays and operational inefficiencies
+* Category-level performance
+* Customer experience and satisfaction
 
-License
--------
-This project is provided as-is for analysis and learning purposes. Add a license file if you intend to publish or share broadly.
+👉 Without this visibility, growth could lead to **customer dissatisfaction and operational strain**.
 
-Contact
--------
-For questions, reach out to the repository owner.
+---
+
+## 💡 The Approach
+
+To solve this, I built an interactive Power BI dashboard that allows stakeholders to move from **high-level KPIs → detailed operational insights**.
+
+The dashboard answers:
+
+* What is driving revenue?
+* Where are delays happening?
+* Which regions and products need attention?
+
+---
+
+## 📊 The Big Picture
+
+<p align="center">
+  <img src="./assets/shopnest_overview.png" width="900"/>
+</p>
+
+At a glance, the business looks strong:
+
+* 💰 Revenue: **15.84M**
+* 📈 Growth: **17.1% YoY**
+* 📦 Orders: **99K**
+
+But one metric stands out:
+
+* ⏱ Average delivery time: **12.5 days**
+
+👉 This hints at a deeper operational issue.
+
+---
+
+## 📦 What’s Driving Revenue?
+
+<p align="center">
+  <img src="./assets/revenue_categories.png" width="700"/>
+</p>
+
+Revenue is dominated by:
+
+* Health & Beauty
+* Watches & Gifts
+* Bed & Bath
+
+👉 The business relies heavily on lifestyle products — a key area to protect and optimize.
+
+---
+
+## 🚚 What’s Happening with Deliveries?
+
+<p align="center">
+  <img src="./assets/delivery_trend.png" width="700"/>
+</p>
+
+* Most deliveries are on time
+* But delays increase during peak periods
+
+👉 Growth is putting pressure on operations.
+
+---
+
+## 🐢 The Real Bottleneck
+
+<p align="center">
+  <img src="./assets/slow_categories.png" width="700"/>
+</p>
+
+Certain categories stand out:
+
+* Furniture
+* Bulky products
+
+👉 These take significantly longer to deliver.
+
+This reveals a key insight:
+
+> Not all products behave the same — logistics complexity matters.
+
+---
+
+## 🌍 Where Is the Pressure Coming From?
+
+<p align="center">
+  <img src="./assets/geo_revenue.png" width="700"/>
+</p>
+
+São Paulo (SP):
+
+* Highest revenue
+* Highest delays
+
+👉 High demand regions are creating **operational bottlenecks**
+
+---
+
+## 🔍 Digging Deeper
+
+<p align="center">
+  <img src="./assets/delivery_analysis.png" width="900"/>
+</p>
+
+When drilling into delays:
+
+* Some deliveries take **50+ days**
+* Delays cluster around specific categories and regions
+
+👉 This confirms the issue is **systematic, not random**
+
+---
+
+## 🧠 What Did We Learn?
+
+* Growth is strong, but operations are under pressure
+* Delivery delays are concentrated in:
+
+  * Bulky product categories
+  * High-demand regions
+* Customer satisfaction is closely tied to delivery performance
+
+---
+
+## 📈 The Impact
+
+This analysis helps the business:
+
+* Identify operational bottlenecks
+* Improve delivery efficiency
+* Enhance customer experience
+* Support data-driven decision making
+
+---
+
+## 🚀 Recommendations
+
+Based on the insights:
+
+* Optimize logistics for bulky products
+* Introduce regional warehouses (especially in SP)
+* Improve last-mile delivery tracking
+* Implement predictive delay monitoring
+
+---
+
+## ⚙️ Tools Used
+
+* Power BI
+* DAX
+* Data Modeling
+* Time Intelligence
+* Drillthrough Analysis
+
+---
+
+## 👨‍💻 Author
+
+**Anisha Maurya**
+Aspiring Data Analyst 🚀
+
+---
+
+
+
